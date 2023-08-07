@@ -1,0 +1,12 @@
+:root {
+    --engineering-orange: #d00000ff;
+    --selective-yellow: #ffba08ff;
+    --steel-blue: #3f88c5ff;
+    --prussian-blue: #032b43ff;
+    --pine-green: #136f63ff;
+}
+
+.port_image {
+  border-radius: 50%;
+}
+
