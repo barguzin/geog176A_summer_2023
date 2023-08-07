@@ -1,0 +1,41 @@
+---
+title: "Lecture 01"
+subtitle: "Geographic Information Science and Systems"
+author: "Evgeny Noi"
+format: 
+  revealjs: default
+  pdf: default
+editor: source
+date: last-modified
+toc: true
+number-sections: false
+slide-number: true
+progress: true
+---
+
+## Welcome to GEOG 176A 
+
+![](https://i.imgur.com/Eg9aT9Q.jpg)
+
+## Course logistics 
+
+- 
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+## Test
+
+here is some text
