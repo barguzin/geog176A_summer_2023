@@ -1,0 +1,150 @@
+---
+title: "Lecture 02"
+subtitle: "Nature of Geographic Data"
+author: "Evgeny Noi"
+format: 
+  revealjs: 
+    css: style.css
+    institute: "UCSB"
+editor: source
+date: last-modified
+toc: true
+number-sections: false
+slide-number: true
+progress: true
+
+---
+
+## Three principles of spatial variation
+
+::: {.incremental}
+
+- Proximity
+- Scale 
+- Covariation 
+
+:::
+
+
+## Your Instructors
+
+| | Evgeny Noi | Oluleye Durojaye | 
+| --- | :---: | :---: | 
+|| <img class="circular_image" src="https://i.imgur.com/Eg9aT9Q.jpg" width="50%"> |  <img class="circular_image" src="https://i.imgur.com/gnwy1SW.jpg" width="30%"> | 
+| email |noi@ucsb.edu|peterodurojaye@ucsb.edu|
+|🏠| Ellison 4829 | Ellison 3625 | 
+|🕙| MWTR: 1:40 - 2:40pm |   TW: 2:00 - 3:00pm | 
+
+## Getting to know your classmates 
+
+### Introduce yourself
+
+1. Name 
+2. Where you come from 
+3. What year are you in 
+4. Major / minor
+5. Why geography and GEOG 176A? 
+
+## Typical Day - Learning about GISS
+
+::: {.callout-note}
+- Expect to spend around 20 hours per week 
+  - lectures: 4h 20mins
+  - in-class lab: 1h 50mins 
+  - independent work: 13h 50mins 
+:::
+
+
+## How to succeed in the class
+
+::: {.callout-tip}
+- Read assigned chapter before lecture (typically one chapter / class) - MTWR
+- Watch any posted ArcGIS Pro tutorials before the lab session - W 
+  - You have one week to submit the lab 
+- Take weekly quiz
+  - quizzes are administered during the class on one of either MTWR
+- Attend lectures 
+- Attend labs
+:::
+
+## Course Components 
+
+::: {.callout-warning}
+
+You can access the [syllabus](https://docs.google.com/document/d/1YP67mlDxrcysWSunEaq21VRBZrwv9_B6LAzIW3MRBYM/edit?usp=sharing) from Canvas, as well as from this presentation. 
+
+:::
+
+| Item | Deliverable | Percent | 
+| --- | --- | :---: | 
+|Labs|**5** Weekly Assignment|50%|
+|Project|Project report|30%|
+|Quizzes|**5** Weekly quizzes|10%|
+|Lectures|Participation|5%|
+|Labs|Participation|5%|
+
+
+
+
+## What so special about spatial? 
+
+> Can you think of an activity today that required spatial thinking? 
+
+::: {.incremental}
+
+- Locating a bathroom / kitchen / fridge in the house 
+- Getting to school (biking / walking / driving), aka 'navigation' 
+- Choosing your seat in this classroom / parking spot 
+
+:::
+
+## Geographic Information Science and Systems 
+
+> **GI Systems** - computer-based tools for collecting, storing, processing, analyzing and visualizing geographic information. Learn more about what GIS is from [ESRI Website](https://www.esri.com/en-us/what-is-gis/overview). 
+
+> **GI Science** - field of knowledge concerned with concepts, principles and methods utilized by GI Systems. Provides a framework for creating new evidence-based knowledge about the Earth. 
+
+## Geographic Information Systems 
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+- Software 
+- Data 
+- Procedures 
+- Hardware 
+- People 
+
+::: 
+
+::: {.column width="60%"}
+
+<img src="https://gisgeography.com/wp-content/uploads/2020/10/GIS-Layers-678x986.png" width="70%">
+
+:::
+
+::::
+
+## GIS Software 
+
+1. ArcGIS (GUI)
+2. QGIS (GUI)
+3. GeoDa (spatial econometrics and spatial statistics)
+3. GRASS GIS (raster analysis, CLI)
+3. R/Python spatial analysis stack (requires coding)
+
+# See you tomorrow {background-color="var(--prussian-blue)"}
+
+```{r bye, echo=F}
+
+library(leaflet) 
+
+m = leaflet() %>% 
+  addTiles() %>% 
+  addMarkers(lng=-119.845289, lat=34.415568, label = "Ellison Hall, 3621",
+             labelOptions = labelOptions(noHide = T, textsize = "15px"))
+
+m
+
+```
